@@ -26,6 +26,7 @@ public class Mercator {
         con = Math.pow(((1.0-con)/(1.0+con)), com);
         double ts = Math.tan(0.5 * ((Math.PI*0.5) - phi))/con;
         double y = 0 - R_MAJOR * Math.log(ts);
+        
         return y;
 
     }
